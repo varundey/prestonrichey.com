@@ -63,11 +63,11 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:700"
           rel="stylesheet"
         />
-        <title>Preston Richey</title>
-        <meta property="og:title" content="Preston Richey" />
+        <title>Varun Dey</title>
+        <meta property="og:title" content="Varun Dey" />
         <meta property="og:description" content="Personal Website" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://prestonrichey.com" />
+        <meta property="og:url" content="https://varundey.me" />
         <meta
           property="og:image"
           content="https://prestonrichey.com/social-meta.png"
@@ -77,18 +77,18 @@ const Layout = ({ children }) => {
           content="https://prestonrichey.com/social-meta.png"
         />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Preston Richey" />
+        <meta name="twitter:title" content="Varun Dey" />
         <meta name="twitter:description" content="Personal Website" />
         <meta
           name="twitter:image"
           content="https://prestonrichey.com/social-meta.png"
         />
-        <meta name="twitter:creator" content="@prestonrichey" />
+        <meta name="twitter:creator" content="@AsDeyQuote" />
       </Helmet>
 
       <StyledHeader>
         <StyledTitle>
-          <TitleLink to="/">Preston Richey</TitleLink>
+          <TitleLink to="/">Varun Dey</TitleLink>
         </StyledTitle>
 
         <Nav />

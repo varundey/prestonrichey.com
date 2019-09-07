@@ -32,7 +32,7 @@ const PostTemplate = ({ data }) => {
     <Layout>
       {frontmatter.title && (
         <Helmet>
-          <title>Preston Richey | {frontmatter.title}</title>
+          <title>Varun Dey | {frontmatter.title}</title>
         </Helmet>
       )}
       {frontmatter.title && (
