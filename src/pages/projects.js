@@ -8,14 +8,6 @@ const ProjectsPageInner = props => {
   try {
     const allProjects = props.data.allMdx ? props.data.allMdx.edges : [];
 
-    const personalProjects = allProjects.filter(
-      project => project.node.fields.projectType === 'personal'
-    );
-
-    const professionalProjects = allProjects.filter(
-      project => project.node.fields.projectType === 'professional'
-    );
-
     return (
       <div>
         <h1>Projects</h1>
@@ -55,6 +47,7 @@ export const query = graphql`
             title
             date
             lede
+            link
           }
           fields {
             slug

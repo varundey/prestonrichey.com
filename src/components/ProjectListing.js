@@ -49,8 +49,10 @@ const ProjectListing = ({ projects }) => {
     return (
       <StyledProjectItem key={project.node.fields.slug}>
         <StyledLinkWrap>
-          <StyledProjectLink to={project.node.fields.slug}>
-            {project.node.frontmatter.title}
+          <StyledProjectLink>
+            <a href={project.node.frontmatter.link}>
+              {project.node.frontmatter.title}
+            </a>
           </StyledProjectLink>
           {': '}
         </StyledLinkWrap>
