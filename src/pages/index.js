@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import loadable from '@loadable/component';
 
 import Layout from './../components/Layout';
-const HeadScene = loadable(() => import('./../components/HeadScene'));
+import HeadScene from './../components/HeadScene';
 
 const StyledContainer = styled.div`
   height: 350px;
