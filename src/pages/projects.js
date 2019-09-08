@@ -19,19 +19,9 @@ const ProjectsPageInner = props => {
     return (
       <div>
         <h1>Projects</h1>
-        {personalProjects.length > 0 && (
-          <ProjectListingSection
-            projects={personalProjects}
-            sectionTitle="Personal"
-          />
-        )}
-
-        {professionalProjects.length > 0 && (
-          <ProjectListingSection
-            projects={professionalProjects}
-            sectionTitle="Professional"
-          />
-        )}
+        <ProjectListingSection
+          projects={allProjects}
+        />
       </div>
     );
   } catch (e) {
