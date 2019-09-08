@@ -33,7 +33,7 @@ const StyledLinkWrap = styled.span`
   }
 `;
 
-const StyledProjectLink = styled(Link)`
+const StyledProjectLink = styled.a`
   // display: inline-block;
   // flex-grow: 0;
 `;
@@ -49,10 +49,8 @@ const ProjectListing = ({ projects }) => {
     return (
       <StyledProjectItem key={project.node.fields.slug}>
         <StyledLinkWrap>
-          <StyledProjectLink>
-            <a href={project.node.frontmatter.link}>
-              {project.node.frontmatter.title}
-            </a>
+          <StyledProjectLink href={project.node.frontmatter.link} target='_blank'>
+            {project.node.frontmatter.title}
           </StyledProjectLink>
           {': '}
         </StyledLinkWrap>
