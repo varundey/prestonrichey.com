@@ -100,6 +100,10 @@ const Nav = () => {
           <NavItem to="/about/" activeClassName={activeClassName}>
             about
           </NavItem>
+        </ListElement><ListElement>
+          <NavItem to="/talks/" activeClassName={activeClassName}>
+            talks
+          </NavItem>
         </ListElement>
       </StyledList>
     </StyledNav>
