@@ -101,11 +101,6 @@ const Nav = () => {
             talks
           </NavItem>
         </ListElement>
-        <ListElement>
-          <NavItem to="/about/" activeClassName={activeClassName}>
-            about
-          </NavItem>
-        </ListElement>
       </StyledList>
     </StyledNav>
   );
