@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-
+import About from '../pages/index.mdx'
 class HeadScene extends Component {
 
   render() {
 
     return (
       <div>
-        Front end JavaScript developer. Open Source and everything about web!
+        <About/>
       </div>
     );
   }
