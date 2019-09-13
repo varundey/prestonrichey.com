@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
         />
         <title>Varun Dey</title>
         <meta property="og:title" content="Varun Dey" />
-        <meta property="og:description" content="Personal Website" />
+        <meta property="og:description" content="Personal Portfolio of Varun Dey" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://varundey.me" />
         <meta
@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
         />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Varun Dey" />
-        <meta name="twitter:description" content="Personal Website" />
+        <meta name="twitter:description" content="Personal Portfolio of Varun Dey" />
         <meta
           name="twitter:image"
           content="https://prestonrichey.com/social-meta.png"
