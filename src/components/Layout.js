@@ -70,18 +70,18 @@ const Layout = ({ children }) => {
         <meta property="og:url" content="https://varundey.me" />
         <meta
           property="og:image"
-          content="https://prestonrichey.com/social-meta.png"
+          content="https://varundey.me/social-meta.png"
         />
         <meta
           property="og:image:secure_url"
-          content="https://prestonrichey.com/social-meta.png"
+          content="https://varundey.me/social-meta.png"
         />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Varun Dey" />
         <meta name="twitter:description" content="Personal Portfolio of Varun Dey" />
         <meta
           name="twitter:image"
-          content="https://prestonrichey.com/social-meta.png"
+          content="https://varundey.me/social-meta.png"
         />
         <meta name="twitter:creator" content="@AsDeyQuote" />
       </Helmet>
