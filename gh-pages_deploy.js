@@ -2,7 +2,11 @@ const ghPages = require('gh-pages');
 
 ghPages.publish(
   'public', {
+    user: {
+      name: 'Varun Dey',
+      email: 'varundey20@gmail.com'
+    },
     branch: 'master',
-    repo: 'https://github.com/varundey/varundey.github.io.git',
-  }, _ => console.log('Deploy Complete!')
+    message: 'Deploy commit from gh-pages',
+  }, (success, error) => console.log(success, error)
 );
