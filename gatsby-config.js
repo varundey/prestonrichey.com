@@ -4,7 +4,6 @@ module.exports = {
       resolve: 'gatsby-plugin-styled-components'
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
