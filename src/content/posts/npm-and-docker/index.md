@@ -98,3 +98,5 @@ npm config set unsafe-perm true
 ```
 
 But ideally the best way is to switch to a non-root user role and then run `npm install` since that way, the outcome will be predictable and would be mimicking your local setup. Each CI service would have it's own way of setting the user but Docker does not provide this out of the box. If you are doing something similar, it would be worthwhile to figure out a way to switch user or if that does not work, you can set `unsafe-perm` in your CI.
+
+This article is also posted on [lambda](https://lambda.grofers.com/how-to-use-your-private-npm-packages-with-docker-on-ci-ccc7c2d019d6) - the official engineering blog of Grofers.   
