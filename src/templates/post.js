@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-import { MDXRenderer } from 'gatsby-mdx';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import Layout from './../components/Layout';
 // import TextPostBody from './../components/TextPostBody';
@@ -26,7 +26,7 @@ const StyledPostDate = styled.time`
 `;
 
 const PostTemplate = ({ data }) => {
-  const { frontmatter, code } = data.mdx;
+  const { frontmatter ,body} = data.mdx;
 
   return (
     <Layout>
@@ -48,7 +48,7 @@ const PostTemplate = ({ data }) => {
         </Helmet>
       )}
       <h1>{frontmatter.title}</h1>
-      <MDXRenderer>{code.body}</MDXRenderer>
+      <MDXRenderer>{body}</MDXRenderer>
       <StyledPostDate>{frontmatter.date}</StyledPostDate>
     </Layout>
   );
@@ -57,16 +57,14 @@ const PostTemplate = ({ data }) => {
 export default PostTemplate;
 
 export const query = graphql`
-  query($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-        date
-        excerpt
-      }
-      code {
-        body
-      }
+query ($slug: String!) {
+  mdx(fields: {slug: {eq: $slug}}) {
+    frontmatter {
+      title
+      date
+      excerpt
     }
+    body
   }
+}
 `;

@@ -44,7 +44,6 @@ query {
       node {
         frontmatter {
           title
-          _PARENT
           layout
           author
           publish

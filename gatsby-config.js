@@ -4,6 +4,7 @@ module.exports = {
       resolve: 'gatsby-plugin-styled-components'
     },
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -97,7 +98,7 @@ module.exports = {
     },
     'gatsby-plugin-twitter',
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: ['.md', '.mdx'],
         defaultLayouts: {
